@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.androidproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/nav_register"
+        android:name="com.example.androidproject.ui.register.RegisterActivity"
+        android:label="@string/menu_register"
+        tools:layout="@layout/activity_register" />
+
+    <activity
+        android:id="@+id/nav_login"
+        android:name="com.example.androidproject.ui.login.LoginActivity"
+        android:label="@string/menu_login"
+        tools:layout="@layout/activity_login" />
+
+    <activity
+        android:id="@+id/nav_shops_list"
+        android:name="com.example.androidproject.ui.shops.ShopsActivity"
+        android:label="@string/menu_shops"
+        tools:layout="@layout/activity_shops" />
+
+    <activity
+        android:id="@+id/nav_megaimage"
+        android:name="com.example.androidproject.ui.megaimage.MegaImageActivity"
+        android:label="Mega Image"
+        tools:layout="@layout/activity_mega_image" />
+
+</navigation>
